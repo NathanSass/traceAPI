@@ -5,32 +5,51 @@ HOST: http://polls.apiblueprint.org/
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
-## Posts Collection [/posts]
+## Nearby Collection [/v1/nearby]
 
-### List All Posts [GET]
+### List All Nearby Places [GET]
 + Response 200 (application/json)
 
-        [
+    {
+        "data": [
             {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Taylor Swift",
-                        "votes": 2048
-                    }, {
-                        "choice": "Python",
-                        "votes": 1024
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 512
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 256
-                    }
-                ]
-            }
+                "id": 1,
+                "items": 12,
+                "category": "Street Art",
+                "url": "https://c2.staticflickr.com/6/5348/7069988341_c98be21905_z.jpg"
+            },
+            {
+                "id": 2,
+                "items": 4,
+                "category": "Outdoor",
+                "url": "http://static6.businessinsider.com/image/57c4e9cf09d29327008b51bf-480/poop-emoji-rock.jpg"
+            },
+            {
+                "id": 3,
+                "items": 39,
+                "category": "Shopping",
+                "url": "https://s15.postimg.org/u0bknizpn/url.jpg"
+            },
+            {
+                "id": 4,
+                "items": 53,
+                "category": "Food",
+                "url": "http://assets.bonappetit.com/photos/57daababbf7e91497a10db74/master/w_1200,c_limit/mission-chinese-food-spread-640.jpg"
+            },
+            {
+                "id": 5,
+                "items": 38,
+                "category": "Music",
+                "url": "https://cdn.theculturetrip.com/images/56-3638674-142836230239c799f239e644389c876a040923e545.jpg"
+            },
+            {
+                "id": 6,
+                "items": 72,
+                "category": "Galleries",
+                "url": "https://designwithspine.files.wordpress.com/2012/04/paxton_turtleskulls.jpg"
+            },
         ]
+    }
 ## Cities Collection [/v1/city]
 
 ### List All Cities [GET]
